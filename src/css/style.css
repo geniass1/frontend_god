@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;;
 }
 
 .container {
@@ -38,7 +39,7 @@ h1 {
 
 .title {
     color: #F9BF3B;
-    font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 41px;
     font-weight: 400;
     line-height: 24px;
@@ -54,7 +55,6 @@ h1 {
     margin: 10px 0;
     line-height: 85px;
     color: #FFFFFF;
-    font-family: Roboto-Black;
     font-size: 80px;
     font-weight: 400;
     text-transform: uppercase;
@@ -69,7 +69,6 @@ h1 {
     margin-top: 23px;
     padding: 0 13px 13px 0;
     color: #FFFFFF;
-    font-family: Roboto-Black;
     font-size: 21px;
     font-weight: 300;
     line-height: 28px;
@@ -126,16 +125,22 @@ h1 {
     padding: 85px 0 75px 0;
 }
 
-.waiting__header {
+.waiting__header, .education__header {
     color: black;
-    font-family: Roboto;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
 
-.waiting__divider {
+.education__header{
+    color:white
+}
+
+.waiting__divider, .education__divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 217px;
     height: 4px;
     background-color: #F9BF3B;
@@ -145,7 +150,6 @@ h1 {
 
 .waiting__subheader {
     color: black;
-    font-family: Roboto;
     font-size: 23px;
     text-align: center;
     margin-top: 21px;
@@ -171,11 +175,13 @@ h1 {
     color: black;
     margin-top: 36px;
     font-size: 15px;
-    font-family: Roboto;
     font-weight: 300;
 }
 
 .more__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../icons/arrows.png);
     height: 20px;
     background-repeat: no-repeat;
@@ -240,4 +246,145 @@ h1 {
     top: -54px;
     left: -240px;
     z-index: -1;
+}
+
+.education{
+    position: relative;;
+    min-height: 444px;
+    background: url('../img/main_2.png') center center/cover no-repeat;
+    padding: 86px 0 79px 0;
+}
+
+.education__icon--first{
+    background: url(../icons/comp.png);
+}
+
+.education__icon--second{
+    background: url(../icons/graph.png);
+}
+
+.education__icon--third{
+    background: url(../icons/diagram.png);
+}
+
+.education__icon--fourth{
+    background: url(../icons/people.png);
+}
+
+.education__icon--fifth{
+    background: url(../icons/wallet.png);
+}
+
+.education__icon{
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.education__wrapper{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.education__item{
+    width: 204px;
+}
+
+.education__round{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color:#b4e2ff;
+    border-radius: 100%;
+}
+
+.education__descr{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+}
+.box{
+    height: 627px;
+    background-color: #efefef;
+    padding: 83px 0 81px 0;
+}
+
+.box__img{
+    background-image: url(../icons/box.png);
+    height: 174px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box__text{
+    font-size: 20px;
+    width: 1133;
+    text-align: center;
+    margin-top: 48px;
+    font-weight: 400;
+}
+
+.finish{
+    height: 515px;
+    padding: 82px 0 70px 0;
+}
+
+.finish__img{
+    background-image: url(../icons/meeting.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.finish__header{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.finish__subheader{
+    color: #299cbd;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.finish__text{
+    font-size: 23px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.end{
+    height: 165px;
+    background-color: #1a1a1a;
+    padding: 63px 0 67px 0;
+}
+
+.end__text{
+    font-size: 15px;
+    text-align: center;
+    color: #888888;
+}
+
+.end__link{
+    font-size: 15px;
+    text-align: center;
+    color: #888888;
+    line-height: 21px;
 }
